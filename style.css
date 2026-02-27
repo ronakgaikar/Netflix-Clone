@@ -5,29 +5,34 @@
     padding:0;
     margin:0;
 }
+body{
+    background-color: black;
+}
 .main{
+     padding-top: 25px; 
     background-image: url("../assets/images/image405.jpg");
     background-position: center center;
-    background-size: max(l200px,100vw);
-    height: 80vh;
+    background-size: max(200px,100vw);
+     background-repeat: no-repeat;
+    height: 644px;
     position: relative;
 }
 .main .box{
-    height: 80vh;
+    height: 644px;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.55;
     position: absolute;
     top:0;
     background-color:black;
 }
 
 nav{
-    max-width: 83vw;
+    max-width: 60vw;
     margin:auto;
-    justify-content: space-around;
+    justify-content: space-between;
     display:flex;
     align-content:center;
-    height: 62px;
+    height: 100px;
 }
 
 nav img{
@@ -52,7 +57,27 @@ nav button{
     position: relative;
 }
 
-.hero :first-child{
-    font-weight: 900;
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
     font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    
+color:rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+#get_str_btn{
+    background-color: rgb(255, 255, 255);
 }
