@@ -8,6 +8,13 @@
 body{
     background-color: black;
 }
+select {
+    color: white;   /* closed select text */
+}
+
+select option {
+    color: black;   /* dropdown list text */
+}
 .main{
      /* padding-top: 25px;  */
     background-image: url("../assets/images/image405.jpg");
@@ -31,7 +38,7 @@ nav{
     top: 25px;
     left: 50%;
      transform: translateX(-50%);
-    width: 60vw;
+    width: 76vw;
 
     /* max-width: 60vw; */
     /* margin:25px auto 0 auto; */
@@ -53,6 +60,78 @@ nav button{
     position: relative;
     z-index: 10;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.lang-select{
+    position: relative;
+    display: inline-block;
+}
+.lang-select i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+    pointer-events: none;
+}
+.lang-select select{
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+
+    color: white;
+    height: 32px;
+    width: 118px;
+
+    padding-left: 30px; /* space for icon */
+}
+.flex button{
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+
+    background-color: rgb(230, 9, 20);
+    border-radius: 5px;
+    color: white;
+
+    border: none;
+    height: 32px;
+    width: 77px;
+}
+
+/* .flex> :nth-child(1){
+   font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.090);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    height: 30px;
+    width: 118px;
+    padding-left: 30px;
+    padding: top;
+    padding-top: 2px;
+}
+.flex> :nth-child(2){
+    font-family: "Martel Sans", sans-serif, "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 9, 20);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: none;
+    height: 30px;
+    width: 77px;
+} */
 .hero{
     font-family: "Martel Sans", sans-serif;
     height: 100%;
@@ -104,7 +183,7 @@ color:rgb(255, 255, 255);
     font-size: 20px;
 }
 
-.mail_str :nth-child(1){
+.mail_str input{
      font-family: "Martel Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
