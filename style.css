@@ -7,6 +7,7 @@
 }
 body{
     background-color: black;
+    color: white;
 }
 select {
     color: white;   /* closed select text */
@@ -23,6 +24,7 @@ select option {
      background-repeat: no-repeat;
     height: 644px;
     position: relative;
+    overflow: hidden;
 }
 .main .box{
     height: 669px;
