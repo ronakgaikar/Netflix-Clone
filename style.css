@@ -152,6 +152,7 @@ nav button{
     font-size: 48px;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 253px;
 }
 
 .hero> :nth-child(2) {
@@ -209,16 +210,23 @@ color:rgb(255, 255, 255);
         margin: 20px auto 0;
 }
 .cards{
+     flex-grow: 1;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-top: 20px;
+    margin-top: px16;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    scroll-behavior: smooth;
+}
+.cards::-webkit-scrollbar {
+    display: none;
 }
 .card {
  min-width:180px;
    flex-shrink: 0;
-      margin: 0 30px;
+      margin: 12px 30px;
       position: relative;
 }
 
@@ -245,4 +253,40 @@ color:rgb(255, 255, 255);
     -webkit-text-stroke: 1.5px white;
     z-index: 1;
     line-height: 1;
+}
+.carousel-container{
+    display:flex;
+    align-items: center;   
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+}
+.handle {
+    position: relative;
+    z-index: 10;
+        height: 109px;
+    width: 23px;
+     background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-shrink: 0;
+
+}
+.handle:hover {
+    background-color: rgb(60, 60, 60);
+}
+.left-handle {
+   
+    border-radius: 8px;
+}
+
+.right-handle {
+   
+    border-radius: 8px;
 }
